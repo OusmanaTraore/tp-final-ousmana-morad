@@ -48,12 +48,13 @@ resource "azurerm_network_security_group" "MyFirstnsg" {
   }
 }
 
-#resource "azurerm_public_ip" "MyFirstPubIp" {
-#    name= "${var.name_pubIp1}"
-#    location= "${var.location}"
-#    resource_group_name= "${var.name}"
-#    allocation_method= "${var.allocation_method}"
-#}
+resource "azurerm_public_ip" "MyFirstPubIp" {
+    name= "${var.name_pubIp1}"
+    location= "${var.location}"
+    resource_group_name= "${var.name}"
+    allocation_method= "${var.allocation_method}"
+}
+
 resource "azurerm_network_interface" "MasterNIC" {
     name= "${var.nameNIC1}"
     location= "${var.location}"
@@ -63,7 +64,7 @@ resource "azurerm_network_interface" "MasterNIC" {
         name= "${var.nameNICconfig1}"
         subnet_id= "${azurerm_subnet.MyFirstSubnet.id}"
         private_ip_address_allocation= "${var.allocation_method}"
-#	public_ip_address_id= "${azurerm_public_ip.MyFirstPubIp.id}"
+	public_ip_address_id= "${azurerm_public_ip.MyFirstPubIp.id}"
     }
 }
 resource "azurerm_virtual_machine" "MasterVM" {

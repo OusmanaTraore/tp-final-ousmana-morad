@@ -1,2 +1,2 @@
-master ansible_host= ansible_port= 
+master ansible_host=52.143.134.28 ansible_port=22
 slave ansible_host= ansible_port=

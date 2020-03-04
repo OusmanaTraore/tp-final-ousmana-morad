@@ -99,6 +99,13 @@ resource "azurerm_virtual_machine" "MasterVM" {
     }
 }
 
+resource "azurerm_public_ip" "MySecondPubIp" {
+    name= "${var.name_pubIp2}"
+    location= "${var.location}"
+    resource_group_name= "${var.name}"
+    allocation_method= "${var.allocation_method}"
+}
+
 resource "azurerm_network_interface" "SlaveNIC" {
     name= "${var.nameNIC2}"
     location= "${var.location}"
@@ -108,7 +115,7 @@ resource "azurerm_network_interface" "SlaveNIC" {
         name= "${var.nameNICconfig2}"
         subnet_id= "${azurerm_subnet.MyFirstSubnet.id}"
         private_ip_address_allocation= "${var.allocation_method}"
-#	public_ip_address_id= "${azurerm_public_ip.MyFirstPubIp.id}"
+	public_ip_address_id= "${azurerm_public_ip.MySecondPubIp.id}"
     }
 }
 resource "azurerm_virtual_machine" "SlaveVM" {

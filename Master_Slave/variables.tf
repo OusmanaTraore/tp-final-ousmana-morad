@@ -14,6 +14,7 @@ variable "name_subnet1" {}
 variable "add_prefix1" {}
 variable "add_prefix2" {}
 variable "name_pubIp1" {}
+variable "name_pubIp2" {}
 variable "name_nsg1" {}
 variable "name_nsg2" {}
 variable "allocation_method" {}

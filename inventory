@@ -1,2 +1,2 @@
-master ansible_host=52.143.134.28 ansible_port=22
-slave ansible_host=40.89.186.167 ansible_port=22
+master ansible_host=40.89.155.110 ansible_port=22
+slave ansible_host=40.89.155.49 ansible_port=22

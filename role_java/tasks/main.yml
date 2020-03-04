@@ -1,0 +1,6 @@
+---
+# tasks file for role_java
+- name: install JDK 
+  yum:
+   name: java
+   state: present

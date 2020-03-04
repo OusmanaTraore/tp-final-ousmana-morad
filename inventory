@@ -1,0 +1,2 @@
+master ansible_host= ansible_port= 
+slave ansible_host= ansible_port=

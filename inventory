@@ -1,11 +1,10 @@
-<<<<<<< HEAD
-master ansible_host=40.89.155.110 ansible_port=22
-slave ansible_host=40.89.155.49 ansible_port=22
-=======
 master ansible_host=40.89.155.110 ansible_port=22 ansible_user=morad
-slave ansible_host=40.89.155.49 ansible_port=22
+slave ansible_host=40.89.155.49 ansible_port=22 ansible_user=morad
 
 
 [Master]
 master
->>>>>>> 9f321fb96c8bfe1b74778edfd9e98cefd71c6d9d
+
+
+[Slave]
+slave

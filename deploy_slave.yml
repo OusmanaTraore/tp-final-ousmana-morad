@@ -1,5 +1,5 @@
 ---
-- hosts: slave
+- hosts: Slave
   become: true
   roles:
    - maven

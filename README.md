@@ -6,7 +6,7 @@ jenkins-om.francecentral.cloudapp.azure.com
 Connection: login: admin, mdp: admin
 
 #Détails
-le Jenkinsfile est une copie du job pipeline mit en place dans Jenkins
+le Jenkinsfile est une copie du job pipeline mis en place dans Jenkins
 
 #Information complementaire
 Vous trouverez les fichiers utilisés pour construire la Pile Complete et les Dockerfile sur https://github.com/MoradMlik/jobPile.com

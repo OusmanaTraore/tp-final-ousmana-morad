@@ -1,5 +1,5 @@
-master ansible_host=40.89.155.110 ansible_port=22 ansible_user=morad
-slave ansible_host=40.89.155.49 ansible_port=22 ansible_user=morad
+master ansible_host=jenkins-om.francecentral.cloudapp.azure.com ansible_port=22 ansible_user=morad
+slave ansible_host=slave-om.francecentral.cloudapp.azure.com ansible_port=22 ansible_user=morad
 
 
 [Master]

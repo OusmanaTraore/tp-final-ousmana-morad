@@ -2,5 +2,6 @@
 - hosts: Slave
   become: true
   roles:
+   - java
    - maven
    - docker
